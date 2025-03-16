@@ -1,3 +1,4 @@
 matplotlib
 seaborn
+plotly
 beautifulsoup4==4.12.2
