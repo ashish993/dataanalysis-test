@@ -277,8 +277,9 @@ for i in range(len(render_matches)):
         report_tab.image(game_image)
     except:
         st.write(f"Apologies, {render_matches[i]} must not be available yet. Please check in later!")
-
-team_data = pd.read_csv(f"https://raw.githubusercontent.com/griffisben/Post_Match_App/main/Stat_Files/{league.replace(' ','%20')}.csv")
+team_data_url = 'https://raw.githubusercontent.com/griffisben/Post_Match_App/refs/heads/main/Stat_Files/Indian%20Super%20League%2024-25.csv'
+team_data = pd.read_csv(team_data_url)
+#(f"https://raw.githubusercontent.com/griffisben/Post_Match_App/main/Stat_Files/{league.replace(' ','%20')}.csv")
 
 conditions_team = [
     team_data['Goals'] > team_data['Goals Conceded'],
