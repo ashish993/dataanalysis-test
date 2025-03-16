@@ -197,7 +197,8 @@ with st.expander('Disclaimer & Info'):
     ''')
 
 try:
-    df = pd.read_csv(https://raw.githubusercontent.com/griffisben/Post_Match_App/refs/heads/main/League_Files/Indian%20Super%20League%20Full%20Match%20List%2024-25.csv)
+    leagueurl = 'https://raw.githubusercontent.com/griffisben/Post_Match_App/refs/heads/main/League_Files/Indian%20Super%20League%20Full%20Match%20List%2024-25.csv'
+    df = pd.read_csv(leagueurl)
     #(f"https://raw.githubusercontent.com/griffisben/Post_Match_App/main/League_Files/{league.replace(' ','%20')}%20Full%20Match%20List.csv")
 except Exception as e:
     st.error(f"Error loading data: {e}")
